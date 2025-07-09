@@ -93,3 +93,16 @@ But the Arrow function is
 
 value = (a, b) => a * b;
 console.log(value(3, 5));
+
+CALLBACK FUNCTION  
+-  Is function that is passed as argument to another function
+
+sum(displayResult,3,5)
+
+function sum(callback,x,y){
+    let result = x + y
+    callback(result)
+}
+function displayResult(result){
+    console.log(result)
+}

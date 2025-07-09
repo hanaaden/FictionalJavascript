@@ -1,26 +1,3 @@
-// let is block scope
-// Hoisting: Hoisted but not initialized, so accessing it before declaration results in a ReferenceError.
-// paractices: for variables that need to be reassigned.
-
-// ========================================
-
-// var is function scope
-// Hoisting: var are hoisted to the top of their scope and initialized as undefined.
-// paractice  Generally avoided in modern JavaScript
-
-// ========================================
-
- // const is block scoped
-// Hoisting: Hoisted but not initialized, so accessing it before declaration results in a ReferenceErro
-// for variables that should not be reassigned.
-
-// ========================================
-
-// scope refers how varaibles,objects and functions are accesible 
-// = function scope is varaible declered within the function\
-// they are only accesible within function
-
-// ========================================
 
 function myfun(){
     var local = 100
