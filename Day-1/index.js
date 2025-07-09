@@ -60,3 +60,24 @@ switch(grade){
         alert("Failed")
         break
 }
+
+console.log("for loop")
+
+for(i=0;i<10;i++){
+    console.log(i)
+}
+
+console.log("while loop")
+
+i = 0
+while(i<10){
+    console.log(i)
+    i++
+}
+
+console.log("do while loop")
+i = 0
+do{
+    console.log(i)
+    i++
+}while(i<10)
