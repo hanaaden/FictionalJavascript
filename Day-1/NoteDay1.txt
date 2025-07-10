@@ -1,3 +1,14 @@
+TypeScript is known as an Object-oriented 
+programming language whereas JavaScript
+ is a prototype-based language.
+
+TypeScript has a feature known as 
+Static typing but JavaScript does not 
+support this feature
+
+TypeScript supports Interfaces but 
+JavaScript does not.
+
 let is block scope
 Hoisting: Hoisted but not initialized, so accessing it before declaration results in a ReferenceError.
 paractices: for variables that need to be reassigned.
