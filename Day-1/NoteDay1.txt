@@ -9,6 +9,10 @@ support this feature
 TypeScript supports Interfaces but 
 JavaScript does not.
 
+when to stick js
+Simplicity and Speed
+popularity
+
 let is block scope
 Hoisting: Hoisted but not initialized, so accessing it before declaration results in a ReferenceError.
 paractices: for variables that need to be reassigned.
