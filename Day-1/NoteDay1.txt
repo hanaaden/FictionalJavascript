@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 javascript is dynamic typed while typescript is static typed 
 means typecript allows explicit type if declaration for variable etc while javascript is variables 
 determined at runtime and there is flexibility 
@@ -11,6 +12,22 @@ syntax:
 condition ? trueExpression: falseExpression 
 
 the best way to declare varaible is to use Let and const since var is old version 
+=======
+TypeScript is known as an Object-oriented 
+programming language whereas JavaScript
+ is a prototype-based language.
+
+TypeScript has a feature known as 
+Static typing but JavaScript does not 
+support this feature
+
+TypeScript supports Interfaces but 
+JavaScript does not.
+
+when to stick js
+Simplicity and Speed
+popularity
+>>>>>>> d0c6ca2e03936930adc13eec1c7b2432454128cd
 
 let is block scope
 Hoisting: Hoisted but not initialized, so accessing it before declaration results in a ReferenceError.
