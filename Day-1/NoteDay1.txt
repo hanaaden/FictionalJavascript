@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 javascript is dynamic typed while typescript is static typed 
 means typecript allows explicit type if declaration for variable etc while javascript is variables 
 determined at runtime and there is flexibility 
