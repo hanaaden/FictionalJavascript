@@ -1,3 +1,10 @@
+in tailwind 
+px- is to control the horizantal paddingg of element 
+py - is to control the vertical padding of element
+mx - is to control the horizantal margin of element
+my- is to control the vertical margin of element
+
+
 Function Declaration 
 
 - A function declaration must have a function name.

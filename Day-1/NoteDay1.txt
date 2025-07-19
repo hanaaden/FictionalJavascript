@@ -1,3 +1,17 @@
+javascript is dynamic typed while typescript is static typed 
+means typecript allows explicit type if declaration for variable etc while javascript is variables 
+determined at runtime and there is flexibility 
+JS is interpreted while TS is compiled 
+TS offers error detection
+
+ternary operator is shortcut way for writing simple if-else statements it is 
+also called a conditional operatorbecouse it works based on condition 
+ternary operator allows you to quick decide between two values depending on the condition 
+syntax:
+condition ? trueExpression: falseExpression 
+
+the best way to declare varaible is to use Let and const since var is old version 
+
 let is block scope
 Hoisting: Hoisted but not initialized, so accessing it before declaration results in a ReferenceError.
 paractices: for variables that need to be reassigned.

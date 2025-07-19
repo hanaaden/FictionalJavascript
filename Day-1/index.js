@@ -41,6 +41,25 @@ if(num1>0 && num2>0){
     console.log('no greater')
 }
 
+console.log("the ternary operator")
+let tr = 90
+ let res =(tr < 100) ? "true" : "falsee"; 
+ console.log(res)
+
+function score(scores){
+    let res = (scores<100 && scores>=90)?
+    "your grade is A":
+                  (scores<90 && scores>=80)?
+    "your grade is B":
+                  (scores <80 && scores >=70)?
+    "your grade is C":
+                  (scores<70 && scores >=60)?
+    "your grade is D":
+                   "you failed"
+    console.log(res)
+}
+score(90)
+
 var grade = "Enter your Grade A B C D or F"
 
 switch(grade){
@@ -75,9 +94,27 @@ while(i<10){
     i++
 }
 
+
 console.log("do while loop")
 i = 0
 do{
     console.log(i)
     i++
-}while(i<10)
+}while(i<10  )
+
+const guesss = document.getElementById("guess")
+const btn = document.getElementById("btn")
+const input = guess.value
+btn.onclick = function(){
+    alert("yow")
+    document.getElementById("output").innerText = "you entered ${guesss}"
+}
+console.log("the rondom")
+
+let guess = 7
+console.log(guess)
+let rondome = Math.floor(Math.random(guess)*10)
+console.log("the number was " + rondome)
+let CGuess = (guess==rondome)?
+"you win": "you failed"
+console.log(CGuess)
