@@ -5,6 +5,22 @@ determined at runtime and there is flexibility
 JS is interpreted while TS is compiled 
 TS offers error detection
 
+== vs ===
+the (==) loose equality : this one uses 
+type coericon before comparing value 
+means if they have different datatypes 
+it converts one or both and then compares 
+means 5=="5" display true becouse it changed 
+the 5 string into a number 
+while 
+
+the (===) the strick equality: this one 
+dont allow coericon means it compares the value
+and datatype without converting the datatype 
+5==="5" will display false 
+the datatype are different so they are not 
+equal 
+
 ternary operator is shortcut way for writing simple if-else statements it is 
 also called a conditional operatorbecouse it works based on condition 
 ternary operator allows you to quick decide between two values depending on the condition 
