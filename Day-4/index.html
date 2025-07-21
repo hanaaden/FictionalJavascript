@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+      .container {
+    margin: 2rem auto;
+    border: 3px solid black;
+    max-width: 90%;
+    width: 300px;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+#myBox {
+    background-color: lightgreen;
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Maintains square shape */
+    font-size: 4vw; /* Scales with viewport width */
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#btn {
+    display: block;
+    margin: 2rem auto;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+#ourBox {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: lightblue;
+    width: 30vw;
+    max-width: 200px;
+    aspect-ratio: 1 / 1;
+    font-size: 6vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+        
+    </style>
+</head>
+<body>
+   
+   
+ 
+    <div class="container">
+     <div id="myBox">
+        click me 😊 
+    </div>
+    <button id="btn"> click me </button>
+   </div>
+  
+     <div id="ourBox">😊</div>
+    
+     
+     
+    <script src="index.js"></script>
+</body>
+</html>
