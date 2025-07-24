@@ -93,7 +93,8 @@ while(i<10){
     console.log(i)
     i++
 }
-
+ 
+console.log;("this is my owref")
 
 console.log("do while loop")
 i = 0
@@ -118,3 +119,4 @@ console.log("the number was " + rondome)
 let CGuess = (guess==rondome)?
 "you win": "you failed"
 console.log(CGuess)
+
