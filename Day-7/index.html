@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleleapis.com/icons?family=Material+Icons" >
+</head>
+<style>
+    .hamburger{
+ display: none;
+}
+.menu{
+  display: flex;
+  font-size: 30px;
+ background-color: black;
+ padding: 20px;
+ height: 30%;
+ display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+li{
+  text-decoration: none;
+  list-style: none;
+}
+a{
+  padding-left: 80px;
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  
+  text-decoration: underline;
+  align-items: center;
+  border-radius: 20px;
+  
+  
+}
+@media only screen and (max-width : 450px) {
+    .hamburger{
+      display: block;
+  position: fixed;
+  z-index: 100;
+  top : 1rem;
+  right : 1rem;
+  padding: 4px;
+  border: black solid 1px;
+  background-color: white;
+  cursor: pointer;
+  
+}
+.closeIcon{
+  display: none;
+  
+}
+a{
+  padding: 0%;
+}
+li{
+  padding-bottom: 30px;
+}
+
+.menu{
+  position: fixed;
+  transform: translateY(-100%);
+  display: block;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100% ;
+  height: 100%;
+  z-index: 99;
+  padding-left: -1rem;
+  background-color: black ;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+}
+.showMenu{
+  transform: translateY(0);
+}
+  
+}
+</style>
+<body>
+  <ul class="menu">
+    <li><a class="menuItem" href="#">Home</a></li>
+    <li><a class="menuItem" href="#">Profile</a></li>
+    <li><a class="menuItem" href="#">About</a></li>
+    <li><a class="menuItem" href="#">contacts</a></li>
+  </ul>
+ <button class="hamburger">
+   <i class="menuIcon material-icons">&#9776;</i>
+  <i class="closeIcon material-icons">&times;</i>
+ </button>
+ <script>
+  const menu = document.querySelector(".menu")
+  const menuItem = document.querySelector(".menuItem")
+  const hamburger = document.querySelector(".hamburger")
+  const closeIcon = document.querySelector(".closeIcon")
+  const menuIcon = document.querySelector(".menuIcon");
+
+  function toggleMenu(){
+    if(menu.classList.contains("showMenu")){
+      menu.classList.remove("showMenu");
+      closeIcon.style.display = "none"
+      menuIcon.style.display = " block "
+      
+      
+    }else {
+         menu.classList.add("showMenu");
+      closeIcon.style.display = "block"
+      menuIcon.style.display = " none "
+    }
+  }
+  hamburger.addEventListener("click" , toggleMenu   )
+ </script>
+</body>
+</html>
