@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 400px;
+}
+
+.container p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+
+#btn {
+  display: block;              /* Make buttons full width */
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  background-color: #717671;   /* Green */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#btn:hover {
+  background-color: #2b312b;   /* Darker green on hover */
+  transform: scale(1.02);      /* Slight zoom on hover */
+}
+#button{
+      display: block;              /* Make buttons full width */
+  width: 40%;
+  padding: 12px;
+  margin: 8px 7rem;
+  background-color: #5d9514;   /* Green */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.score{
+    font-size: 30px;
+}
+.feedback{
+    font-size: 40px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="question">Which of the following is a primitive data type in JavaScript?</p>
+        <button id="btn" class="btn1">Array</button>
+        <button id="btn" class="btn2">Object</button>
+        <button id="btn" class="btn3">String</button>
+        <button id="btn" class="btn4">Function</button>
+        <button id="button">Next</button>
+    </div>
+      <script src="quiz.js"></script>
+</body>
+</html>
