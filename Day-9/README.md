@@ -146,10 +146,8 @@ Async Task
   * **Micro-tasks have higher priority** and are processed before the next macro-task.
 * The event loop ensures **smooth execution** of tasks without blocking the main thread.
 
----
 
-This mechanism is what makes JavaScript powerful for building **responsive** and **non-blocking** applications!
 
-```
+
 
 
