@@ -47,23 +47,27 @@ first();
 
 
 
-# avaScript Event Loop
+# javaScript Event Loop
 
 What is the Event Loop?
 The event loop is a continuously running process that monitors the call stack and the task queue, allowing JavaScript to perform non-blocking operations despite being a single-threaded language. This means that while one task is being executed, other tasks can be queued and executed once the current task is completed.
-Key Components of the Event Loop
-Call Stack: This is where JavaScript keeps track of function calls. When a function is invoked, it is pushed onto the stack, and when it completes, it is popped off. This follows a Last In, First Out (LIFO) order.
+
+### Key Components of the Event Loop
+`Call Stack`: This is where JavaScript keeps track of function calls. When a function is invoked, it is pushed onto the stack, and when it completes, it is popped off. This follows a Last In, First Out (LIFO) order.
 Task Queue (Callback Queue): This queue holds tasks that are ready to be executed, typically resulting from asynchronous operations like setTimeout, DOM events, or AJAX requests. Tasks in this queue are processed in a First In, First Out (FIFO) order.
-Microtask Queue: This is a special queue for microtasks, which include promise callbacks. Microtasks are processed before tasks in the task queue, ensuring that promise resolutions are handled promptly.
+
+`Microtask Queue:` This is a special queue for microtasks, which include promise callbacks. Microtasks are processed before tasks in the task queue, ensuring that promise resolutions are handled promptly.
 Web APIs: These are provided by the browser environment and include functionalities like timers, HTTP requests, and DOM manipulation. When an asynchronous operation is completed, its callback is added to the appropriate queue.
-How the Event Loop Works
+
+### How the Event Loop Works
 The event loop continuously checks if the call stack is empty. If it is, it takes the first task from the task queue and pushes it onto the call stack for execution.
 After executing a task, the event loop checks the microtask queue and processes all microtasks before moving back to the task queue.
 This cycle continues, allowing JavaScript to handle multiple operations efficiently without blocking the main thread.
-Importance of the Event Loop
+### Importance of the Event Loop
 Understanding the event loop is crucial for writing performant and responsive JavaScript applications. It allows developers to manage asynchronous operations effectively, ensuring that the user interface remains responsive while background tasks are processed. This is particularly important in web applications where user interactions and data fetching occur simultaneously.
-Example
+## Example
 Consider the following code snippet:
+```
 console.log('Start');
 setTimeout(() => {
 console.log('Timeout');
@@ -72,22 +76,22 @@ Promise.resolve().then(() => {
 console.log('Promise Resolved');
 });
 console.log('End');
-Output:
+```
+### Output:
 Start
 End
 Promise Resolved
 Timeout
+
 In this example, the setTimeout callback is added to the task queue, while the promise resolution is added to the microtask queue. The promise callback executes before the timeout callback because microtasks are processed first.
-By grasping the event loops  mechanics, developers can write more efficient and responsive JavaScript code, enhancing the overall user experience in web applications. 
-GeeksForGeeks
-+4
+
 
 
 
 The **event loop** is a fundamental concept in JavaScript that enables **asynchronous programming** while maintaining its **single-threaded** nature.  
 It ensures that non-blocking operations (such as I/O tasks or timers) are executed efficiently **without freezing the main thread**.
 
----
+
 
 ## How It Works
 
@@ -130,6 +134,7 @@ Async Task
 ```
 
 ---
+```
 
 ## Key Points
 
@@ -147,7 +152,4 @@ This mechanism is what makes JavaScript powerful for building **responsive** and
 
 ```
 
-Do you want me to also:
-- Add an **ASCII diagram** of the event loop flow (stack → Web APIs → queue → loop)?
-- Or make it more stylish with **emojis and color emphasis** for GitHub?
-```
+
