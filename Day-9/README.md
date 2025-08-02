@@ -98,7 +98,16 @@ It ensures that non-blocking operations (such as I/O tasks or timers) are execut
 * Tasks are categorized into:
 
   * **Macro-tasks** (e.g., `setTimeout`, `setInterval`)
+   A micro-task is said to be a function that is executed after the function or program which created it exits and only if the JavaScript execution stack is empty
+   Micro-tasks are often scheduled for things that are required to be completed immediately after the execution of the current script
+   The event loop does not move to the next task outside of the micro-task queue until all the tasks inside the micro-task queue are completed.
+
+   Once all the tasks inside the micro-task queue are finished, only then does the event loop shifts back to the macro-task queue. The primary reason for prioritizing the micro-task queue is to improve the user experience.
   * **Micro-tasks** (e.g., Promises, `queueMicrotask`)
+
+  Macro-task represents some discrete and independent work. These are always the execution of the JavaScript code and the micro-task queue is empty. Macro-task queue is often considered the same as the task queue or the event queue.
+
+   task queue is used for synchronous statements whereas the macro-task queue is used for asynchronous statements.
   * **Micro-tasks have higher priority** and are processed before the next macro-task.
 * The event loop ensures **smooth execution** of tasks without blocking the main thread.
 

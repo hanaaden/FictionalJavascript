@@ -14,8 +14,11 @@ Function Declaration
 - Function declarations are hoisted
 
 SYNTAX- 
+
+```
 Function FirstTry(par1, par1) {
 }
+```
 
 Function Expression 
 
