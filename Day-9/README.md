@@ -47,7 +47,7 @@ first();
 
 Here’s a clean **README.md** version of your event loop explanation for GitHub:
 
-````markdown
+
 # JavaScript Event Loop
 
 What is the Event Loop?
