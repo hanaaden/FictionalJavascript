@@ -92,6 +92,17 @@ The **event loop** is a fundamental concept in JavaScript that enables **asynchr
 It ensures that non-blocking operations (such as I/O tasks or timers) are executed efficiently **without freezing the main thread**.
 
 
+## Key Points
+
+* JavaScript is **single-threaded**, but the event loop allows it to handle **multiple tasks concurrently**.
+* Tasks are categorized into:
+
+  * **Macro-tasks** (e.g., `setTimeout`, `setInterval`)
+  * **Micro-tasks** (e.g., Promises, `queueMicrotask`)
+  * **Micro-tasks have higher priority** and are processed before the next macro-task.
+* The event loop ensures **smooth execution** of tasks without blocking the main thread.
+
+
 
 ## How It Works
 
@@ -132,18 +143,8 @@ Start
 End
 Async Task
 
+```
 
-
-
-## Key Points
-
-* JavaScript is **single-threaded**, but the event loop allows it to handle **multiple tasks concurrently**.
-* Tasks are categorized into:
-
-  * **Macro-tasks** (e.g., `setTimeout`, `setInterval`)
-  * **Micro-tasks** (e.g., Promises, `queueMicrotask`)
-  * **Micro-tasks have higher priority** and are processed before the next macro-task.
-* The event loop ensures **smooth execution** of tasks without blocking the main thread.
 
 
 
