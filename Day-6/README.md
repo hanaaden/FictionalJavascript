@@ -44,3 +44,26 @@ JavaScript can add new HTML elements and attributes
 JavaScript can react to all existing HTML events in the page
 
 JavaScript can create new HTML events in the page
+
+# Try and catch - error handling
+The try statement defines a code block to run (to try).
+
+The catch statement defines a code block to handle any error.
+
+The finally statement defines a code block to run regardless of the result.
+
+The throw statement defines a custom error.
+
+The try statement allows you to define a block of code to be tested for errors while it is being executed.
+
+The catch statement allows you to define a block of code to be executed, if an error occurs in the try block.
+
+### errors
+
+Error Name	Description
+`EvalError`	An error has occurred in the eval() function
+`RangeError`	A number "out of range" has occurred
+`ReferenceError`	An illegal reference has occurred
+`SyntaxError`	A syntax error has occurred
+`TypeError`	A type error has occurred
+`URIError`	An error in encodeURI() has occurred
