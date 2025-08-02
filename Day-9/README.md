@@ -43,12 +43,11 @@ function third() {
 }
 
 first();
+```
 
 
-Here’s a clean **README.md** version of your event loop explanation for GitHub:
 
-
-# JavaScript Event Loop
+# avaScript Event Loop
 
 What is the Event Loop?
 The event loop is a continuously running process that monitors the call stack and the task queue, allowing JavaScript to perform non-blocking operations despite being a single-threaded language. This means that while one task is being executed, other tasks can be queued and executed once the current task is completed.
