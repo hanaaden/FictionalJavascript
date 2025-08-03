@@ -5,6 +5,20 @@ determined at runtime and there is flexibility
 JS is interpreted while TS is compiled 
 TS offers error detection
 
+Number → 42
+
+String → 'hello'
+
+Boolean → true / false
+
+undefined → a variable declared but not assigned
+
+null → intentional absence of any object value
+
+BigInt → large integers beyond 2^53 - 1
+
+Symbol → unique and immutable identifier
+
 == vs ===
 the (==) loose equality : this one uses 
 type coericon before comparing value 
@@ -43,10 +57,16 @@ JavaScript does not.
 when to stick js
 Simplicity and Speed
 popularity
->>>>>>> d0c6ca2e03936930adc13eec1c7b2432454128cd
+
+**var** declares variables with function or global scope and allows re-declaration and updates within the same scope.
+ It is function-scoped or globally scoped, depending on where it's declared.
+**let** declares variables with block scope, allowing updates but not re-declaration within the same block.
+ It is block-scoped, meaning the variable is only accessible within the block where it is declared.
+**const** declares block-scoped variables that cannot be reassigned after their initial assignment.
+ It cannot be updated or re-declared within its scope.
 
 let is block scope
-Hoisting: Hoisted but not initialized, so accessing it before declaration results in a ReferenceError.
+**Hoisting**: Hoisted but not initialized, so accessing it before declaration results in a ReferenceError.
 paractices: for variables that need to be reassigned.
 
 ========================================
