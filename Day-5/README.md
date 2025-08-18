@@ -1,4 +1,23 @@
 # Day-5
+# DOM
+THERE IS ONE FUNCTIONALITY THAT JAVASCRIPT HAS AND IT IS A DOM
+document object model is programming inerface for HTML and XML documents 
+it respresent the steucture f document as tree of object 
+which each object represent a part of docsucha s element attribute or text node 
+
+DOM allows to manipulate and access the element 
+we have 4 main approaches to choosing component 
+- getElementById
+- getElementByTagName
+- getElementByClassName
+- querySelector 
+- querySelectorAll
+
+**getElementById** is function using the elements id to access HTML
+**getElementByClassName** this function returns a collection of all documents
+components that belong to given class
+
+
 ### document.getElementById() 
 is a method used to access an HTML element by its unique id attribute.
 Purpose: It retrieves the element with the specified id.

@@ -34,6 +34,32 @@ This will return the
 number of values that the array
 console.log(cars.length) //3
 
+
+push()
+🔹 What it does:
+Adds one or more elements to the end of the array.
+
+unshift()
+🔹 What it does:
+Adds one or more elements to the beginning of the array.
+
+pop()
+🔹 What it does:
+Removes the last element from the array.
+
+shift()
+🔹 What it does:
+Removes the first element from the array.
+
+🔹 includes(value)
+Returns true if the array contains the value.
+
+🔹 indexOf(value)
+Returns the index of the value (or -1 if not found).
+
+🔹 find(callback)
+Returns the first item that matches a condition.
+
 ## Practice exercise 
 1. Create an array to use as your shopping list with 3 items: "Milk,"
 "Bread," and "Apples."
@@ -165,3 +191,5 @@ dog , and we gave this an object as a value. We can
 `dog["color"] = "blue"; `
 `dog.weight = 2.3; `
 `console.log(dog); `
+
+
