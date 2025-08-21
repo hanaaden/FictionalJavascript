@@ -14,7 +14,7 @@ const check = async (ms) => {
         if (ms < 0) {
             throw new Error("error happened");
         }else{
-            const result = await delay(ms)
+            const result = await deley(ms)
     console.log(result)
         }
     }catch(error){
