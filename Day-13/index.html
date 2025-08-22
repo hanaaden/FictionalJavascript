@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .con{
+        display: block;
+    }
+    button{
+        background-color: aqua;
+        font-size: 20px;
+        border-radius: 20px;
+        margin-top: 10px;
+    }
+    .contain {
+       background-color: antiquewhite;
+       border: 1px solid black;
+       padding: 20px;
+       border-radius: 20px;
+       color: black;
+       font-size: 20px;
+       margin-top: 10px;
+    }
+    input{
+        background-color: aliceblue;
+        padding: 10px;
+        border-radius: 20px;
+    }
+</style>
+<body>
+   <div class="con">
+    <h1>Student Dashboard</h1>
+   <button id="btn">Get students</button>
+   <button id="btn1">filter passed students</button>
+   <button id="btn2">Sort students</button>
+   <p><input type="text" id="input" placeholder="enter a name"></p>
+   <button id="btn3">Search students</button>
+    <div id="container">
+
+    </div>
+   </div>
+
+    <script >
+   const container = document.getElementById("container")
+   const button = document.getElementById("btn")
+   const button1 = document.getElementById("btn1")
+   const button2 = document.getElementById("btn2") 
+   const button3 = document.getElementById("btn3") 
+   const input = document.getElementById("input")
+ let students = [
+  { name: "Ali", age: 20, grade: 85, passed: true },
+  { name: "Musa", age: 22, grade: 92, passed: true },
+  { name: "Hodan", age: 19, grade: 78, passed: true },
+  { name: "Ahmed", age: 23, grade: 45, passed: false },
+  { name: "Fatima", age: 21, grade: 66, passed: true }
+];
+
+button3.addEventListener("click" , ()=>{
+    let get = input.value
+    if(input.value == ""){
+        alert("input a valid name")
+    
+    }else {
+      let results = students.filter(student => student.name.toLowerCase().includes(get.toLowerCase()))
+
+      results.forEach((stud)=>{
+          let contain = document.createElement("div")
+         contain.classList.add("contain")
+        let name = document.createElement('h3')
+         let age = document.createElement('p')
+         let grade = document.createElement('p')
+         let passed = document.createElement('p')
+
+            name.textContent = "name: " + stud.name
+            age.textContent ="age: " + stud.age
+            grade.textContent = "grade: "  + stud.grade
+            passed.textContent = "passed: " + stud.passed
+
+    contain.appendChild(name)
+    contain.appendChild(age)
+    contain.appendChild(grade)
+    contain.appendChild(passed)
+    container.appendChild(contain)
+      })
+        
+
+    }
+
+})
+
+  button.addEventListener("click",()=>{
+
+    container.innerHTML = "     "
+        let getter = students.map ((get)=>{
+        
+         let contain = document.createElement("div")
+         contain.classList.add("contain")
+        let name = document.createElement('h3')
+         let age = document.createElement('p')
+         let grade = document.createElement('p')
+         let passed = document.createElement('p')
+
+            name.textContent = "name: " + get.name
+            age.textContent ="age: " + get.age
+            grade.textContent = "grade: "  + get.grade
+            passed.textContent = "passed: " + get.passed
+
+    contain.appendChild(name)
+    contain.appendChild(age)
+    contain.appendChild(grade)
+    contain.appendChild(passed)
+    container.appendChild(contain)
+    })
+   
+  })
+
+  button1.addEventListener("click", ()=>{
+     let filter = students.filter((filt)=>filt.grade > 90)
+        container.innerHTML = ""
+         filter.forEach((stud)=>{
+           let contain = document.createElement("div")
+         contain.classList.add("contain")
+        let name = document.createElement('h3')
+         let age = document.createElement('p')
+         let grade = document.createElement('p')
+         let passed = document.createElement('p')
+
+            name.textContent = "name: " + stud.name
+            age.textContent ="age: " + stud.age
+            grade.textContent = "grade: "  + stud.grade
+            passed.textContent = "passed: " + stud.passed
+
+    contain.appendChild(name)
+    contain.appendChild(age)
+    contain.appendChild(grade)
+    contain.appendChild(passed)
+    container.appendChild(contain)
+         })
+         
+    })
+
+
+
+  
+
+  button2.addEventListener("click", ()=>{
+     let sort = students.sort((a,b)=> b.grade - a.grade )
+        container.innerHTML = ""
+         sort.forEach((stud)=>{
+           let contain = document.createElement("div")
+         contain.classList.add("contain")
+        let name = document.createElement('h3')
+         let age = document.createElement('p')
+         let grade = document.createElement('p')
+         let passed = document.createElement('p')
+
+            name.textContent = "name: " + stud.name
+            age.textContent ="age: " + stud.age
+            grade.textContent = "grade: "  + stud.grade
+            passed.textContent = "passed: " + stud.passed
+
+    contain.appendChild(name)
+    contain.appendChild(age)
+    contain.appendChild(grade)
+    contain.appendChild(passed)
+    container.appendChild(contain)
+         })
+         
+    })
+
+
+
+  
+    </script>
+</body>
+</html>
