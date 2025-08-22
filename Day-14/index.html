@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background: #f0f8ff; /* light blue background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Title */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0077b6;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #023e8a;
+}
+
+
+#weatherDisplay {
+    margin-top: 30px;
+    padding: 20px;
+    width: 300px;
+    background-color: #caf0f8;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+#weatherDisplay h2 {
+    margin-bottom: 10px;
+    color: #023e8a;
+}
+
+#weatherDisplay p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+#weatherDisplay img {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+    </style>
+</head>
+<body>
+    <h1>Weather Dashboard</h1>
+    <input type="text" id="cityInput" placeholder="Enter a city">
+    <br>
+    <button id="btn">Get Weather</button>
+    <div id="weatherDisplay">
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
